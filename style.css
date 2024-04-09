@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background color */
+  }
+  
+  .background-image {
+    background-image: url('./images/intermidbg\ by\ ahmad.png'); /* Path to your Eid background image */
+    height: 100vh; /* 100% of the viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .countdown-card {
+    width: 90%; /* Narrow width on mobile for better margin */
+    max-width: 600px; /* Maximum width of the card */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  
+  .company-logo {
+    position: absolute;
+    top: -25px; /* Adjusted for mobile */
+    left: 10px; /* Adjusted for mobile */
+    width: 20%; /* Starting with 20% width of the parent container */
+    max-width: 100px; /* Maximum size of the logo */
+    height: auto;
+  }
+  
+  .countdown {
+    color: rgb(5, 201, 80);
+    padding-top: 50px; /* Make room for the logo */
+  }
+  
+  .countdown h1 {
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 1.12em;
+    letter-spacing: -.01em;
+    margin-bottom: 0.5em;
+  }
+  
+  .countdown p {
+    text-align: center;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: 1.12em;
+    letter-spacing: -.02em;
+  }
+  
+  /* Smaller screens (mobile): adjust font sizes and logo size */
+  @media only screen and (max-width: 599px) {
+    .countdown h1 {
+      font-size: 24px; /* Smaller font size for h1 */
+    }
+  
+    .countdown p {
+      font-size: 14px; /* Smaller font size for paragraphs */
+    }
+  
+    .company-logo {
+      top: 10px; /* Adjust top position for mobile */
+      left: 5%; /* Center based on parent width */
+      width: 30%; /* Logo takes more width on smaller screens */
+      max-width: 120px; /* But not more than 120px */
+    }
+  }
+  
+  /* Medium screens (tablets): adjust card width */
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .countdown-card {
+      width: 80%; /* Wider on tablets */
+    }
+  }
+  
+  /* Larger screens: adjust card width and logo size */
+  @media only screen and (min-width: 768px) {
+    .countdown-card {
+      width: 70%; /* Wider on desktops */
+    }
+  
+    .company-logo {
+      top: -50px; /* Back to the larger size logo position */
+      left: 20px;
+      width: auto; /* Adjust width based on actual logo size */
+      max-width: 150px; /* Larger logo size */
+    }
+  
+    .countdown h1 {
+      font-size: 2.5em; /* Larger font size for h1 */
+    }
+  
+    .countdown p {
+      font-size: 1.2em; /* Larger font size for paragraphs */
+    }
+  }
+  
